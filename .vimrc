@@ -38,3 +38,4 @@ set title
 set nobackup
 set nowritebackup
 
+set autoindent
