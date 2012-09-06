@@ -7,6 +7,10 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="gentoo"
 EDITOR="vim"
+alias g11='g++-4.7 -std=c++11'
+alias st2='~/SublimeText2/sublime_text &'
+alias music='vlc -f http://fileserve.strifey.com:8000 &'
+alias srvr='ssh kyle@filserve.strifey.com'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
