@@ -1,8 +1,14 @@
 set nocp
 
 let mapleader = ","
+set nocompatible            
 
-call pathogen#infect()
+filetype off    
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'kien/ctrlp.vim'
+filetype plugin indent on 
 
 map Y y$
 
@@ -13,15 +19,18 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
-inoremap <up> <nop>
 
 set ruler
 set number
 nnoremap <leader>l :set number!<CR>
+nnoremap <leader>c :let @/ = ""<CR>
 
 set sts=4
 set ts=4
 set sw=4
+
+autocmd QuickFixCmdPost [^l]* nested cwindow                                      
+autocmd QuickFixCmdPost    l* nested lwindow
 
 set wildmenu
 set wildmode=list:longest

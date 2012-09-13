@@ -10,7 +10,7 @@ EDITOR="vim"
 alias g11='g++-4.7 -std=c++11'
 alias st2='~/SublimeText2/sublime_text &'
 alias music='vlc -f http://fileserve.strifey.com:8000 &'
-alias srvr='ssh kyle@filserve.strifey.com'
+alias srvr='ssh kyle@fileserve.strifey.com'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
