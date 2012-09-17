@@ -8,6 +8,9 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
+Bundle 'metalelf0/vimt0d0'
+Bundle 'tpope/vim-surround'
+Bundle 'ervandew/supertab'
 filetype plugin indent on 
 
 map Y y$
