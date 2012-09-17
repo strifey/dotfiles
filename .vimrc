@@ -11,6 +11,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'metalelf0/vimt0d0'
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
+Bundle 'vim-scripts/taglist.vim'
 filetype plugin indent on 
 
 map Y y$
