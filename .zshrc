@@ -9,7 +9,7 @@ ZSH_THEME="gentoo"
 EDITOR="vim"
 alias g11='g++-4.7 -std=c++11'
 alias st2='~/SublimeText2/sublime_text &'
-alias music='vlc -f http://fileserve.strifey.com:8000 &'
+alias music='vlc -f http://fileserve.strifey.com:8000 & \n'
 alias srvr='ssh kyle@fileserve.strifey.com'
 alias la='ls -a'
 # Example aliases
