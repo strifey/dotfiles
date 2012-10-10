@@ -9,8 +9,14 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'metalelf0/vimt0d0'
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
-Bundle 'vim-scripts/taglist.vim'
+"Bundle 'vim-scripts/taglist.vim'"
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdcommenter'
 filetype plugin indent on 
+
+"setting up Syntastic"
+let g:syntastic_cpp_compiler = 'g++-4.7'
+let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra -pedantic'
 
 set ruler
 set number

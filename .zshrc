@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+PATH=$PATH:/usr/bin/gcc-4.7
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -8,8 +9,9 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="gentoo"
 EDITOR="vim"
 alias g11='g++-4.7 -std=c++11'
+alias vim='vim -p'
 alias st2='~/SublimeText2/sublime_text &'
-alias music='vlc -f http://fileserve.strifey.com:8000 & \n'
+alias music='vlc -f http://fileserve.strifey.com:8000 --intf ncurses'
 alias srvr='ssh kyle@fileserve.strifey.com'
 alias la='ls -a'
 # Example aliases
