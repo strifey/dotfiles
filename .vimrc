@@ -40,6 +40,9 @@ nnoremap <leader>l :set number!<CR>
 nnoremap <leader>z :let @/ = ""<CR>
 nnoremap U u
 
+map tn :tabnext<CR>
+map tp :tabprevious<CR>
+
 autocmd QuickFixCmdPost [^l]* nested cwindow                                      
 autocmd QuickFixCmdPost    l* nested lwindow
 
