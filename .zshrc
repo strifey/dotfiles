@@ -15,6 +15,8 @@ alias music='vlc -f http://fileserve.strifey.com:8000 --intf ncurses'
 alias srvr='ssh kyle@fileserve.strifey.com'
 alias la='ls -a'
 alias gtar='tar -zxvf'
+alias upup='sudo apt-get update && sudo apt-get upgrade'
+alias :q='exit'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"

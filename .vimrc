@@ -17,6 +17,7 @@ filetype plugin indent on
 "setting up Syntastic"
 let g:syntastic_cpp_compiler = 'g++-4.7'
 let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra -pedantic'
+let g:syntastic_mode_map = {'mode' : 'passive'}
 
 set ruler
 set number
