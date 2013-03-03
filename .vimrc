@@ -8,9 +8,9 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'metalelf0/vimt0d0'
 Bundle 'tpope/vim-surround'
-"Bundle 'ervandew/supertab'
+Bundle 'ervandew/supertab'
 "Bundle 'vim-scripts/taglist.vim'"
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/gtags.vim'
@@ -20,8 +20,8 @@ let g:syntastic_cpp_compiler = 'g++-4.7'
 let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra -pedantic'
 let g:syntastic_mode_map = {'mode' : 'passive'}
 
-"filetype plugin on
-"set ofu=syntaxcomplete#Complete
+filetype plugin on
+set ofu=syntaxcomplete#Complete
 
 set ruler
 set number
