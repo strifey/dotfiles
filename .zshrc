@@ -17,6 +17,8 @@ alias la='ls -a'
 alias gtar='tar -zxvf'
 alias upup='sudo apt-get update && sudo apt-get upgrade'
 alias :q='exit'
+alias android-connect="mtpfs -o allow_other /media/Nexus4"
+alias android-disconnect="fusermount -u /media/Nexus4"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
