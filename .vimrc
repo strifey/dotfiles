@@ -16,6 +16,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/gtags.vim'
 Bundle "Chiel92/vim-autoformat"
 Bundle 'vim-scripts/a.vim'
+Bundle 'mhinz/vim-startify'
 "Bundle 'airblade/vim-gitgutter'
 
 "setting up Syntastic"
@@ -83,8 +84,14 @@ set nowritebackup
 
 set autoindent
 
-augroup auto_h
+augroup auto_cpp_h
 	autocmd!
 	au BufRead,BufNewFile *.cpp exe "vsplit" fnameescape(expand("<amatch>:r").".h")
 	au BufRead,BufNewFile *.cpp :set syntax=cpp
+augroup END
+
+augroup auto_c_h
+	autocmd!
+	au BufRead,BufNewFile *.c exe "vsplit" fnameescape(expand("<amatch>:r").".h")
+	au BufRead,BufNewFile *.c :set syntax=cpp
 augroup END
