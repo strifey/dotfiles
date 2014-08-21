@@ -1,6 +1,5 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-PATH=$PATH:/usr/bin/gcc-4.7
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -8,18 +7,13 @@ PATH=$PATH:/usr/bin/gcc-4.7
 # time that oh-my-zsh is loaded.
 ZSH_THEME="gentoo"
 EDITOR="vim"
-alias g11='g++-4.7 -std=c++11'
 alias vim='vim -p'
-alias st2='~/SublimeText2/sublime_text &'
 alias music='vlc -f http://fileserve.strifey.com:8000 --intf ncurses'
-alias srvr='ssh kyle@fileserve.strifey.com'
+alias srvr='ssh kyle@f.strifey.com'
 alias la='ls -a'
 alias gtar='tar -zxvf'
 alias upup='sudo apt-get update && sudo apt-get upgrade'
 alias :q='exit'
-alias android-connect="mtpfs -o allow_other /media/Nexus4"
-alias android-disconnect="fusermount -u /media/Nexus4"
-alias vpp='vim *.cpp'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -42,7 +36,7 @@ alias vpp='vim *.cpp'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git mercurial)
+plugins=(git mercurial gitignore pep8 pyenv pylint python tmux)
 
 source $ZSH/oh-my-zsh.sh
 

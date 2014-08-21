@@ -17,12 +17,18 @@ Bundle 'vim-scripts/gtags.vim'
 Bundle "Chiel92/vim-autoformat"
 Bundle 'vim-scripts/a.vim'
 Bundle 'mhinz/vim-startify'
+Bundle 'bling/vim-airline'
 "Bundle 'airblade/vim-gitgutter'
 
 "setting up Syntastic"
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = '-std=c++0x -Wall -Wextra -pedantic'
 let g:syntastic_mode_map = {'mode' : 'passive'}
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme             = 'powerlineish'
+let g:airline_enable_branch     = 1
+let g:airline_enable_syntastic  = 1
 
 set noswapfile
 set showmatch
