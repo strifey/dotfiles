@@ -2,27 +2,25 @@ set nocompatible
 let mapleader = ","
 
 filetype off    
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'kien/ctrlp.vim'
-Bundle 'metalelf0/vimt0d0'
-Bundle 'tpope/vim-surround'
-Bundle 'ervandew/supertab'
-"Bundle 'vim-scripts/taglist.vim'"
-"Bundle 'Valloric/YouCompleteMe'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'vim-scripts/gtags.vim'
-Bundle "Chiel92/vim-autoformat"
-Bundle 'vim-scripts/a.vim'
-Bundle 'mhinz/vim-startify'
-Bundle 'bling/vim-airline'
-"Bundle 'airblade/vim-gitgutter'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/vundle'
+Plugin 'kien/ctrlp.vim'
+Plugin 'metalelf0/vimt0d0'
+Plugin 'tpope/vim-surround'
+Plugin 'ervandew/supertab'
+"Plugin 'vim-scripts/taglist.vim'"
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'vim-scripts/gtags.vim'
+Plugin 'Chiel92/vim-autoformat'
+Plugin 'vim-scripts/a.vim'
+Plugin 'mhinz/vim-startify'
+Plugin 'bling/vim-airline'
+"Plugin 'airblade/vim-gitgutter'
 
 "setting up Syntastic"
-let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_compiler_options = '-std=c++0x -Wall -Wextra -pedantic'
 let g:syntastic_mode_map = {'mode' : 'passive'}
 
 let g:airline#extensions#tabline#enabled = 1
