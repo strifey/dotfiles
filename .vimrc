@@ -47,7 +47,6 @@ set sw=4
 map Y y$
 
 inoremap jj <Esc>
-inoremap kk <Esc>
 inoremap jk <Esc>
 inoremap kj <Esc>
 inoremap ;; <Esc>
@@ -87,6 +86,8 @@ set nobackup
 set nowritebackup
 
 set autoindent
+
+autocmd FileType python set expandtab
 
 augroup auto_cpp_h
 	autocmd!
