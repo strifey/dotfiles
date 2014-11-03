@@ -4,7 +4,7 @@ let mapleader = ","
 filetype off    
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'metalelf0/vimt0d0'
 Plugin 'tpope/vim-surround'
@@ -18,6 +18,8 @@ Plugin 'Chiel92/vim-autoformat'
 Plugin 'vim-scripts/a.vim'
 Plugin 'mhinz/vim-startify'
 Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 "Plugin 'airblade/vim-gitgutter'
 
 "setting up Syntastic"
@@ -27,6 +29,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme             = 'powerlineish'
 let g:airline_enable_branch     = 1
 let g:airline_enable_syntastic  = 1
+
+let g:nerdtree_tabs_open_on_console_startup=1
 
 set noswapfile
 set showmatch
@@ -51,17 +55,20 @@ inoremap jk <Esc>
 inoremap kj <Esc>
 inoremap ;; <Esc>
 
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-
 nnoremap <leader>l :set number!<CR>
 nnoremap <leader>z :let @/ = ""<CR>
 nnoremap U u
 
-map <Tab> :tabnext<CR>
-map <S-Tab> :tabprevious<CR>
+nnoremap <Tab> :tabnext<CR>
+nnoremap <S-Tab> :tabprevious<CR>
+nnoremap th  :tabprev<CR>
+nnoremap tj  :tablasb<CR>
+nnoremap tk  :tabfirst<CR>
+nnoremap tl  :tabnext<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap tn  :tabnew<Space>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
 
 autocmd QuickFixCmdPost [^l]* nested cwindow                                      
 autocmd QuickFixCmdPost    l* nested lwindow
@@ -79,15 +86,17 @@ set infercase
 set incsearch
 set hlsearch
 set wrap
-
 set title
 
 set nobackup
 set nowritebackup
 
 set autoindent
-
 autocmd FileType python set expandtab
+autocmd FileType conf set expandtab
+autocmd FileType conf set sts=2
+autocmd FileType conf set ts=2
+autocmd FileType conf set sw=2
 
 augroup auto_cpp_h
 	autocmd!
