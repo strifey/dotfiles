@@ -35,10 +35,13 @@ let g:nerdtree_tabs_open_on_console_startup=1
 set noswapfile
 set showmatch
 
-syntax on
 filetype plugin on
 filetype indent on
 set ofu=syntaxcomplete#Complete
+
+syntax on
+colorscheme ir_black
+
 
 noremap <leader>f :Autoformat<CR><CR>
 
