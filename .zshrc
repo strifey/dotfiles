@@ -9,15 +9,12 @@ ZSH_THEME="kkelly"
 # "gentoo"
 EDITOR="vim"
 alias vim='vim -p'
-alias music='vlc -f http://strifey.com:8000 --intf ncurses'
+alias music='vlc -f http://m.strifey.com--intf ncurses'
 alias srvr='ssh kyle@f.strifey.com'
 alias la='ls -a'
 alias gtar='tar -zxvf'
 alias upup='sudo apt-get update && sudo apt-get upgrade'
 alias :q='exit'
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
