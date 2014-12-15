@@ -9,8 +9,8 @@ ZSH_THEME="kkelly"
 # "gentoo"
 EDITOR="vim"
 alias vim='vim -p'
-alias music='vlc -f http://m.strifey.com--intf ncurses'
-alias srvr='ssh kyle@f.strifey.com'
+alias music='vlc -f http://m.strifey.com --intf ncurses'
+alias srvr='ssh kyle@strifey.com'
 alias la='ls -a'
 alias gtar='tar -zxvf'
 alias upup='sudo apt-get update && sudo apt-get upgrade'
