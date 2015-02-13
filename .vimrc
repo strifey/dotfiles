@@ -22,6 +22,7 @@ Plugin 'bling/vim-airline'
 "Plugin 'jistr/vim-nerdtree-tabs'
 "Plugin 'airblade/vim-gitgutter'
 call vundle#end()
+filetype plugin indent on
 
 "setting up Syntastic"
 let g:syntastic_mode_map = {'mode' : 'passive'}
