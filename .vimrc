@@ -18,9 +18,10 @@ Plugin 'Chiel92/vim-autoformat'
 Plugin 'vim-scripts/a.vim'
 Plugin 'mhinz/vim-startify'
 Plugin 'bling/vim-airline'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'jistr/vim-nerdtree-tabs'
 "Plugin 'airblade/vim-gitgutter'
+call vundle#end()
 
 "setting up Syntastic"
 let g:syntastic_mode_map = {'mode' : 'passive'}
@@ -41,7 +42,6 @@ set ofu=syntaxcomplete#Complete
 
 syntax on
 colorscheme ir_black
-
 
 noremap <leader>f :Autoformat<CR><CR>
 
