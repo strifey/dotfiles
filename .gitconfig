@@ -1,0 +1,12 @@
+[user]
+	email = kkelly@yelp.com
+[branch]
+	autosetuprebase = always
+[pull]
+	rebase = preserve
+[rebase]
+	stat = true
+	autostash = true
+[alias]
+	pog = log --pretty=format:\"%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s\"
+	reci = commit --amend --no-edit
