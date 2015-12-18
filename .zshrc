@@ -16,6 +16,14 @@ alias gtar='tar -zxvf'
 alias upup='sudo apt-get update && sudo apt-get upgrade'
 alias :q='exit'
 
+function mnl () {
+	if [ $# -lt 2 ]; then echo "Need at least 2 args: 'mnl FILE DIR'"; return; fi
+	dir="${@: -1}"
+	while [ $# -gt 1 ]; do
+		mv $1 $dir && ln -sf "$dir/$1" $1; shift
+	done
+}
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
