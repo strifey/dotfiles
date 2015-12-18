@@ -6,6 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="kkelly"
+UPDATE_ZSH_DAYS=60
 # "gentoo"
 EDITOR="vim"
 alias vim='vim -p'
@@ -15,6 +16,14 @@ alias la='ls -a'
 alias gtar='tar -zxvf'
 alias upup='sudo apt-get update && sudo apt-get upgrade'
 alias :q='exit'
+
+function mnl () {
+	if [ $# -lt 2 ]; then echo "Need at least 2 args: 'mnl FILE DIR'"; return; fi
+	dir="${@: -1}"
+	while [ $# -gt 1 ]; do
+		mv $1 $dir && ln -sf "$dir/$1" $1; shift
+	done
+}
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
