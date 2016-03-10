@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+UPDATE_ZSH_DAYS=30
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -16,6 +17,10 @@ alias la='ls -a'
 alias gtar='tar -zxvf'
 alias upup='sudo apt-get update && sudo apt-get upgrade'
 alias :q='exit'
+alias fixssh='export $(tmux show-environment | grep \^SSH_AUTH_SOCK=)'
+alias fs='fixssh'
+alias tmux='agenttmux'
+alias review-branch='review-branch --nopush -f'
 
 function mnl () {
 	if [ $# -lt 2 ]; then echo "Need at least 2 args: 'mnl FILE DIR'"; return; fi

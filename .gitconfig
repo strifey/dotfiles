@@ -1,5 +1,6 @@
 [user]
-	email = kkelly@yelp.com
+	name = Kyle Kelly
+	email = strifey16@gmail.com
 [branch]
 	autosetuprebase = always
 [pull]
@@ -9,4 +10,9 @@
 	autostash = true
 [alias]
 	pog = log --pretty=format:\"%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s\"
+	lol = log --oneline --graph --decorate --color=always --pretty=format:'%C(auto)%h - %C(bold blue)%aN%Cgreen(%cr)%C(auto)%d%Creset %s' "$@"
 	reci = commit --amend --no-edit
+[push]
+	followTags = true
+[include]
+	path = ~/.gitconfig_extra
