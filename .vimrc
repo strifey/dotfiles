@@ -6,7 +6,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'metalelf0/vimt0d0'
 Plugin 'tpope/vim-surround'
 Plugin 'ervandew/supertab'
 "Plugin 'vim-scripts/taglist.vim'"
@@ -17,9 +16,8 @@ Plugin 'vim-scripts/gtags.vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'vim-scripts/a.vim'
 Plugin 'mhinz/vim-startify'
-Plugin 'bling/vim-airline'
-"Plugin 'scrooloose/nerdtree'
-"Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 filetype plugin indent on
