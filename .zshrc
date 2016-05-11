@@ -1,6 +1,5 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-UPDATE_ZSH_DAYS=30
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
