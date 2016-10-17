@@ -4,6 +4,7 @@ let mapleader = ","
 filetype off    
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'tpope/vim-sensible'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
