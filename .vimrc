@@ -95,6 +95,10 @@ set nobackup
 set nowritebackup
 
 set autoindent
+
+au BufRead,BufNewFile Dockerfile setfiletype docker
+
+autocmd Filetype docker set expandtab
 autocmd FileType python set expandtab
 autocmd FileType conf set expandtab
 autocmd FileType conf set sts=2
