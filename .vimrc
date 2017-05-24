@@ -96,10 +96,12 @@ set nowritebackup
 
 set autoindent
 
-au BufRead,BufNewFile Dockerfile setfiletype docker
+au BufRead,BufNewFile Dockerfile  setfiletype docker
+au BufRead,BufNewFile Jenkinsfile setfiletype groovy
 
 autocmd Filetype docker set expandtab
 autocmd FileType python set expandtab
+autocmd FileType groovy set expandtab
 autocmd FileType conf set expandtab
 autocmd FileType conf set sts=2
 autocmd FileType conf set ts=2
