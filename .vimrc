@@ -19,6 +19,7 @@ Plugin 'vim-scripts/a.vim'
 Plugin 'mhinz/vim-startify'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'leafgarland/typescript-vim'
 "Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 filetype plugin indent on

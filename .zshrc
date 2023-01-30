@@ -16,19 +16,16 @@ alias la='ls -a'
 alias gtar='tar -zxvf'
 alias pgrep='pgrep -fl'
 alias upup='sudo apt update && sudo apt upgrade'
-alias :q='exit'
-alias fixssh='export $(tmux show-environment | grep \^SSH_AUTH_SOCK=)'
-alias fs='fixssh'
 alias review-branch='review-branch --nopush -f'
 alias ish='ssh -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
-alias mdf='df -h -xsquashfs -xtmpfs -xdevtmpfs'
+alias gpom='g pull origin master:master'
 
 function mnl () {
-	if [ $# -lt 2 ]; then echo "Need at least 2 args: 'mnl FILE DIR'"; return; fi
-	dir="${@: -1}"
-	while [ $# -gt 1 ]; do
-		mv $1 $dir && ln -sf "$dir/$1" $1; shift
-	done
+  if [ $# -lt 2 ]; then echo "Need at least 2 args: 'mnl FILE DIR'"; return; fi
+  dir="${@: -1}"
+  while [ $# -gt 1 ]; do
+    mv $1 $dir && ln -sf "$dir/$1" $1; shift
+  done
 }
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)

@@ -11,9 +11,11 @@
 [alias]
 	pog = log --pretty=format:\"%C(white)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%C(yellow)%d %Creset%s\"
 	brog = "!git --no-pager log --pretty=format:\"%C(white)%h %Cblue%>(12)%cr %Cgreen%<(7)%aN%C(yellow)%d %Creset%s\" ${1:-master}..HEAD"
-	lol = log --oneline --graph --decorate --color=always --pretty=format:'%C(auto)%h - %C(bold blue)%aN%Cgreen(%cr)%C(auto)%d%Creset %s' "$@"
+	lol = log --oneline --graph --decorate --color=always --pretty=format:'%C(auto)%h - %C(bold blue)%aN%Cgreen(%cr)%C(auto)%d%Creset %s'
 	reci = commit --amend --no-edit
 [diff]
 	renames = true
 [include]
 	path = ~/.gitconfig_extra
+[help]
+	autoCorrect = 30
