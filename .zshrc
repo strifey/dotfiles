@@ -15,12 +15,13 @@ alias srvr='ssh kyle@strifey.com'
 alias la='ls -a'
 alias gtar='tar -zxvf'
 alias pgrep='pgrep -fl'
-alias upup='sudo apt-get update && sudo apt-get upgrade'
+alias upup='sudo apt update && sudo apt upgrade'
 alias :q='exit'
 alias fixssh='export $(tmux show-environment | grep \^SSH_AUTH_SOCK=)'
 alias fs='fixssh'
 alias review-branch='review-branch --nopush -f'
 alias ish='ssh -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+alias mdf='df -h -xsquashfs -xtmpfs -xdevtmpfs'
 
 function mnl () {
 	if [ $# -lt 2 ]; then echo "Need at least 2 args: 'mnl FILE DIR'"; return; fi
